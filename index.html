@@ -64,9 +64,24 @@
                 I'm interested in working on the intersection of computer vision, machine learning and robotics.
               </p>
 
-            <div class="list-item highlight previews" data-category="highlight">
-              <a href="https://arxiv.org/pdf/2109.11547"><video class="preview1" playsinline="" muted="" autoplay="" loop=""><source src="images/bal_edan.mp4" type="video/mp4"></video></a>
-            </div>
+            <!-- <div class="list-item highlight previews" data-category="highlight"> -->
+
+              <h4> CYBATHLON Challenges (assistant robot race)</h4>
+              <a href="https://www.youtube.com/watch?v=EoER_5vYZsU&t=3s&ab_channel=DLRRM">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EoER_5vYZsU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </a>  
+              
+              <h4> Bayesian Active Learning Demo on an assitive robot EDAN</h4>
+              <a href="https://arxiv.org/pdf/2109.11547"><video width="560" height="315" playsinline="" muted="" autoplay="" loop=""><source src="images/bal_edan.mp4" type="video/mp4"></video></a>
+
+              
+              <h4> Bayesian Active Learning Demo on aerial manipulation robnot SAM</h4>
+              <a href="https://www.youtube.com/watch?v=JRnPIARW8xY&ab_channel=DLRRM">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/JRnPIARW8xY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </a>
+
+              <!-- <a href="https://arxiv.org/pdf/2109.11547"><video class="preview2" playsinline="" muted="" autoplay="" loop=""><source src="images/bal_edan.mp4" type="video/mp4"></video></a> -->
+            <!-- </div> -->
             </td>
           </tr>
         </tbody></table>
@@ -82,24 +97,24 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 				
-    <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  bgcolor="#ffffd0">
+    <tr onmouseout="bal_edan_stop()" onmouseover="bal_edan_start()"  bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <!-- <div class="two" id='zipnerf_image'><video  width=100% height=100% muted autoplay loop>
+          <!-- <div class="two" id='bal_edan_image'><video  width=100% height=100% muted autoplay loop>
           <source src="images/bal_edan.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video></div> -->
           <img src='images/iros22_bal.png' width="160">
         </div>
         <script type="text/javascript">
-          function zipnerf_start() {
-            document.getElementById('zipnerf_image').style.opacity = "1";
+          function bal_edan_start() {
+            document.getElementById('bal_edan_image').style.opacity = "1";
           }
 
-          function zipnerf_stop() {
-            document.getElementById('zipnerf_image').style.opacity = "0";
+          function bal_edan_stop() {
+            document.getElementById('bal_edan_image').style.opacity = "0";
           }
-          zipnerf_stop()
+          bal_edan_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
@@ -112,19 +127,63 @@
         <a href="https://rmc.dlr.de/rm/de/staff/maximilian.durner/">Maximilian Durner</a>,
         <a href="https://rmc.dlr.de/rm/de/staff/rudolph.triebel/">Rudolph Triebel</a>,
         <br>
-        <em>arXiv</em>, 2023
+        2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
         <br>
         <a href="https://github.com/DLR-RM/BayesSim2Real">code</a>
         /
         <a href="https://www.youtube.com/watch?v=EoER_5vYZsU&t=3s&ab_channel=DLRRM">video</a>
         /
         <a href="https://arxiv.org/pdf/2109.11547">arXiv</a>
+        /
+        <a href="data/bal2022.bib">bibtex</a>
         <p></p>
         <p>
-        We focus on an efficient acquisition of real data within a Sim-to-Real learning pipeline based on Bayesian Neural Networks.
+          Efficient acquisition of real data within a Sim-to-Real learning pipeline via deep Bayesian active learning to minimize manual annotation efforts.
         </p>
-      </td>
     </tr>
+
+
+
+    <tr onmouseout="FR_SAM_stop()" onmouseover="FR_SAM_start()"  bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <!-- <div class="two" id='FR_SAM_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/bal_edan.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div> -->
+          <img src='images/FR2023.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function FR_SAM_start() {
+            document.getElementById('FR_SAM_image').style.opacity = "1";
+          }
+
+          function FR_SAM_stop() {
+            document.getElementById('FR_SAM_image').style.opacity = "0";
+          }
+          FR_SAM_stop()
+        </script>
+      </td>
+    <td style="padding:20px;width:75%;vertical-align:middle">
+      <a href="https://elib.dlr.de/194517/1/Vol3_10.pdf">
+        <papertitle>Virtual Reality via Object Pose Estimation and Active Learning: Realizing Telepresence Robots with Aerial Manipulation Capabilities</papertitle>
+      </a>
+      <br>
+      <a href="https://rmc.dlr.de/rm/en/staff/jongseok.lee/">Jongseok Lee</a>, <a href="https://rmc.dlr.de/rm/en/staff/ribin.balachandran/">Ribin Radhakrishna Balachandran</a> , Konstantin Kondak, Andre Coelho, Marco De Stefano, Matthias Humt, <strong>Jianxiang Feng</strong>, Tamim Asfour,   <a href="https://rmc.dlr.de/rm/de/staff/rudolph.triebel/">Rudolph Triebel</a>,
+    
+      <br>
+      Field Robotics
+      <br>
+      <a href="https://www.youtube.com/watch?v=JRnPIARW8xY&ab_channel=DLRRM">video</a>
+      <!-- /
+      <a href="data/bal2022.bib">bibtex</a> -->
+      <p></p>
+      <p>
+        A novel teleoperation system for advancing aerial manipulation in dynamic and unstructured environments based on pose estimation pipelines for the industrial objects of
+        both known and unknown geometries and an active learning pipeline.
+      </p>
+    </td>
+  </tr>
 
         </tbody></table>
 
