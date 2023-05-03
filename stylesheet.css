@@ -129,3 +129,65 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/**************************************************/
+/* Isotope grid list of items. */
+
+.grid {
+  padding-bottom: 6em;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.description {
+  margin-bottom: 1em;
+}
+
+.list-item {
+  width: 100%;
+  line-height: 1em;
+  margin-top: 1em;
+}
+
+.list-item p.date {
+  display: inline-block;
+  width: 3em;
+  color: #a0a8b0;
+}
+
+/**************************************************/
+/* Gallery of 3 preview videos. */
+
+.previews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  height: 12.5em;
+}
+
+.previews video {
+  border-radius: 5px;
+}
+
+.previews a:hover {
+  border: none;
+}
+
+.preview1 {
+  grid-column: 1;
+  width: 100%;
+}
+.preview2 {
+  grid-column: 2;
+  width: 100%;
+}
+.preview3 {
+  grid-column: 3;
+  width: 100%;
+}
